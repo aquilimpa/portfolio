@@ -12,16 +12,7 @@ main {
     flex: 1;
 }
 
-/*Nav bar*/
-.hide{
-    display: none;
-}
-.nav {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 3.59mm;
-    color: white;
-}
+
 
 .section {
     position: static;
@@ -46,7 +37,8 @@ main {
     vertical-align: middle;
     border-style: none;
     padding-top: 1mm;
-    padding-right: 68%;
+    padding-right: 20%;
+    top: 0px;
 }
 
 .img-bg-logo {
@@ -90,6 +82,13 @@ main {
     /* display: table; */
     table-layout: fixed;
     width: 100%;
+}
+
+.fp-tableCell {
+    /* display: table-cell; */
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
 }
 
 /*Animação do cursor*/

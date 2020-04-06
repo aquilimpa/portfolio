@@ -19,9 +19,9 @@ $w.on("scroll", function () {
   var banner = $('#barra');
   
   setInterval(function () {
-    if ($w.scrollTop() > 150) {
-      banner.removeClass('hide');
-
+    if ($w.anchors() > 50) {
+        banner.addClass('hide');
+        console.log('ok');
     }
   }, 1000);
 });
