@@ -14,35 +14,14 @@
     <link rel="stylesheet" type="text/css" href="css/examples.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-light navcolor">
-        <a class="navbar-brand" href="#"> <img class="logo" src="img/logo.svg" alt="" srcset=""></a>
-        <ul class="nav justify-content-end mr-5">
-            <li>
-                <a href=""></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-white" href="#section0">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Portfólio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Contato</a>
-            </li>
-        </ul>
+    <nav class="navbar sticky-top bg-transparent">
+        <a class="navbar-brand" href="#"> <img data-aos="zoom-in" class="logo" src="img/logo.svg" alt="" srcset=""></a>
     </nav>
-
-
-
-
-
     <main>
 
         <div id="fullpage">
@@ -53,14 +32,16 @@
 
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5">
-                                <p class="titulo">Olá, mundo!<span class="underline">_</span></p>
-                                <p class="sub-titulo">Eu sou Fabiano Antero</p>
+                                <p class="titulo" data-aos="zoom-in">Olá, mundo!<span class="underline">_</span></p>
+                                <p class="sub-titulo" data-aos="zoom-in">Eu sou Fabiano Antero</p>
                             </div>
-                            <div class=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <img class="perfil" src="img/45268743_2590471564311294_7347460515525835736_n.svg"
+                            <div class= col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <img class="perfil" data-aos="fade-down"
+                                data-aos-easing="linear"
+                                data-aos-duration="1500" src="img/45268743_2590471564311294_7347460515525835736_n.svg"
                                     alt="">
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5" data-aos="zoom-in">
                                 <p class="titulo-conteudo"> UI & UX / Developer</p>
                                 <p class="conteudo">Um grande entusiasta do design
                                     centrado no usuário. <br> A Experiência do Usuário é a grande diferença entre o
@@ -70,13 +51,13 @@
                         <div class="row mt-5">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <a href="#" class="btn btntwo btn-outline-warning" role="button"
-                                    aria-pressed="true">Contate-me</a>
+                                    aria-pressed="true" data-aos="zoom-in">Contate-me</a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <img class="img-bg-logo" src="img/background-logo.svg">
+                            <img class="img-bg-logo" data-aos="fade-right" src="img/background-logo.svg">
                         </div>
                     </div>
                 </div>
@@ -95,14 +76,14 @@
                     <div class="flex__container flex--eon flex--active" data-slide="1">
                         <div class="flex__item flex__item--left">
                             <div class="flex__content">
-                                <p class="text--sub">Landing Page</p>
+                                <p class="text--sub" >Landing Page</p>
                                 <h1 class="text--big">Energisa On</h1>
                                 <p class="text--normal">Nesse projeto pude estruturar todo seu fronte e criar alguns scripts. <br>
                                     Os botões para baixar o aplicativo na Apple store e Google paly só são exibidos para seus systemas.
-                                    <br> A navbar só é exibida se os botões das lojas não estiverem visíveis na tela.</p>
+                                    A navbar só é exibida se os botões das lojas não estiverem visíveis na tela.</p>
                                     <div class="row mt-5">
                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                            <a href="https://fabiano-antero.github.io/EON/" class="btn btn-info"  target="_blank" role="button"
+                                            <a  href="https://fabiano-antero.github.io/EON/" class="btn btn-info"  target="_blank" role="button"
                                                 aria-pressed="true">Ver modelo</a>
                                         </div>
                                     </div>
@@ -110,7 +91,7 @@
                             <p class="text__background">Energisa</p>
                         </div>
                         <div class="flex__item flex__item--right"></div>
-                        <img class="eon__img img-fluid" src="img/eon.png" />
+                        <img class="eon__img img-fluid"  src="img/eon.png" />
                     </div>
                     <div class="flex__container flex--piplup animate--start" data-slide="2">
                         <div class="flex__item flex__item--left">
@@ -205,6 +186,10 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
         <script src="js/slide.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 
 </body>
 

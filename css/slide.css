@@ -6,7 +6,7 @@
 
 .slider__navi {
     position: absolute;
-    top: 74%;
+    top: 80%;
     right: 20px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -33,7 +33,7 @@
 
 .flex__container {
     position: absolute;
-    top: 1280px;
+    top: 1266px;
     left: 0;
     display: flex;
     display: -webkit-flex;
