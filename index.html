@@ -13,28 +13,52 @@
     <link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/examples.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
 
 </head>
 
 <body>
+    <nav class="navbar sticky-top navbar-light navcolor">
+        <a class="navbar-brand" href="#"> <img class="logo" src="img/logo.svg" alt="" srcset=""></a>
+        <ul class="nav justify-content-end mr-5">
+            <li>
+                <a href=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-white" href="#section0">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Portfólio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
     <main>
 
         <div id="fullpage">
             <div class="section " id="section0">
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <img class="logo" src="img/logo.svg" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
+
                 <div class="container-fluid">
                     <div class="container">
 
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5">
                                 <p class="titulo">Olá, mundo!<span class="underline">_</span></p>
                                 <p class="sub-titulo">Eu sou Fabiano Antero</p>
+                            </div>
+                            <div class=" col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <img class="perfil" src="img/45268743_2590471564311294_7347460515525835736_n.svg"
+                                    alt="">
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5">
                                 <p class="titulo-conteudo"> UI & UX / Developer</p>
@@ -45,7 +69,7 @@
                         </div>
                         <div class="row mt-5">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <a href="#" class="btn btn-outline-warning" role="button"
+                                <a href="#" class="btn btntwo btn-outline-warning" role="button"
                                     aria-pressed="true">Contate-me</a>
                             </div>
                         </div>
@@ -58,28 +82,105 @@
                 </div>
 
             </div>
-<!--
+
 
 
             <div class="section" id="section1">
-                <div class="slide" id="slide1">
-                    <div class="intro">
-                        <h1>Ideal for small screens</h1>
+               
+
+            </div>
+            
+            <div class="section" id="section2">
+                <div class="slider__warpper">
+                    <div class="flex__container flex--eon flex--active" data-slide="1">
+                        <div class="flex__item flex__item--left">
+                            <div class="flex__content">
+                                <p class="text--sub">Landing Page</p>
+                                <h1 class="text--big">Energisa On</h1>
+                                <p class="text--normal">Nesse projeto pude estruturar todo seu fronte e criar alguns scripts. <br>
+                                    Os botões para baixar o aplicativo na Apple store e Google paly só são exibidos para seus systemas.
+                                    <br> A navbar só é exibida se os botões das lojas não estiverem visíveis na tela.</p>
+                                    <div class="row mt-5">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <a href="https://fabiano-antero.github.io/EON/" class="btn btn-info"  target="_blank" role="button"
+                                                aria-pressed="true">Ver modelo</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <p class="text__background">Energisa</p>
+                        </div>
+                        <div class="flex__item flex__item--right"></div>
+                        <img class="eon__img img-fluid" src="img/eon.png" />
+                    </div>
+                    <div class="flex__container flex--piplup animate--start" data-slide="2">
+                        <div class="flex__item flex__item--left">
+                            <div class="flex__content">
+                                <p class="text--sub">Pokemon Gen IV</p>
+                                <h1 class="text--big">Piplup</h1>
+                                <p class="text--normal">Nesse proj</p>
+                            </div>
+                            <p class="text__background">Piplup</p>
+                        </div>
+                        <div class="flex__item flex__item--right"></div>
+                        <img class="eon__img" src="" />
+                    </div>
+                    <div class="flex__container flex--blaziken animate--start" data-slide="3">
+                        <div class="flex__item flex__item--left">
+                            <div class="flex__content">
+                                <p class="text--sub">Pokemon Gen III</p>
+                                <h1 class="text--big">Blaziken</h1>
+                                <p class="text--normal">Blaziken is the Fire/Fighting-type Starter Pokémon of the Hoenn
+                                    region, introduced in Generation III. Blaziken is a large, bipedal, humanoid
+                                    bird-like Pokémon that resembles a rooster.</p>
+                            </div>
+                            <p class="text__background">Blaziken</p>
+                        </div>
+                        <div class="flex__item flex__item--right"></div>
+                        <img class="eon__img" src="https://s4.postimg.org/6795hnlql/blaziken.png" />
+                    </div>
+                    <div class="flex__container flex--dialga animate--start" data-slide="4">
+                        <div class="flex__item flex__item--left">
+                            <div class="flex__content">
+                                <p class="text--sub">Pokemon Gen IV</p>
+                                <h1 class="text--big">Dialga</h1>
+                                <p class="text--normal">Dialga is a Steel/Dragon-type Legendary Pokémon. Dialga is a
+                                    sauropod-like Pokémon. It is mainly blue with some gray, metallic portions, such as
+                                    its chest plate, which has a diamond in the center. It also has various, light blue
+                                    lines all over
+                                    its body.</p>
+                            </div>
+                            <p class="text__background">Dialga</p>
+                        </div>
+                        <div class="flex__item flex__item--right"></div>
+                        <img class="eon__img" src="https://s4.postimg.org/43yq9zlxp/dialga.png" />
+                    </div>
+                    <div class="flex__container flex--zekrom animate--start" data-slide="5">
+                        <div class="flex__item flex__item--left">
+                            <div class="flex__content">
+                                <p class="text--sub">Pokemon Gen V</p>
+                                <h1 class="text--big">Zekrom</h1>
+                                <p class="text--normal">Zekrom is a Dragon/Electric-type Legendary Pokémon. It is part
+                                    of the Tao Trio, along with Reshiram and Kyurem. Zekrom is a large, black draconian
+                                    Pokémon that seems to share its theme with its counterpart, Reshiram. It has
+                                    piercing red eyes and
+                                    dark gray to black skin that seems to be armor-like.</p>
+                            </div>
+                            <p class="text__background">Zekrom</p>
+                        </div>
+                        <div class="flex__item flex__item--right"></div>
+                        <img class="eon__img" src="https://s4.postimg.org/malmhgn9p/zekrom.png" />
                     </div>
                 </div>
 
-                <div class="slide" id="slide2">
-                    <h1>This example uses responsiveWidth: 900</h1>
-                </div>
-
-            </div>
-
-            <div class="section" id="section2">
-                <div class="intro">
-                    <h1>Keep it simple!</h1>
+                <div class="slider__navi">
+                    <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+                    <a href="#" class="slide-nav" data-slide="2">piplup</a>
+                    <a href="#" class="slide-nav" data-slide="3">blaziken</a>
+                    <a href="#" class="slide-nav" data-slide="4">dialga</a>
+                    <a href="#" class="slide-nav" data-slide="5">zekrom</a>
                 </div>
             </div>
-
+<!--
             <div class="section" id="section3">
                 <div class="intro">
                     <h1>Keep it simple!</h1>
@@ -103,6 +204,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src="js/slide.js"></script>
 
 </body>
 

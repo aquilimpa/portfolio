@@ -12,6 +12,10 @@ main {
     flex: 1;
 }
 
+.navcolor{
+    background-color: #1F1F1F;
+}
+
 
 
 .section {
@@ -36,14 +40,21 @@ main {
 .logo {
     vertical-align: middle;
     border-style: none;
-    padding-top: 1mm;
-    padding-right: 20%;
-    top: 0px;
+    margin-left: 30mm;
+
+}
+
+.perfil{
+    width: 40%;
+    top: -150px;
+    left: 700px;
+    position: absolute;
+    z-index: -2;
 }
 
 .img-bg-logo {
-    width: 65%;
-    top: -580px;
+    width: 50%;
+    top: -450px;
     left: 50px;
     position: absolute;
     z-index: -2;
@@ -73,23 +84,16 @@ main {
     color: white;
 }
 
-.btn {
+.btntwo {
     font-weight: 300;
     color: #FFB633;
 }
 
-.fp-section.fp-table, .fp-slide.fp-table {
-    /* display: table; */
-    table-layout: fixed;
-    width: 100%;
+.btn-info{
+    background-color: rgb(93, 93, 93);
 }
 
-.fp-tableCell {
-    /* display: table-cell; */
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
-}
+
 
 /*Animação do cursor*/
 
