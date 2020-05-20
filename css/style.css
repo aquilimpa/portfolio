@@ -299,3 +299,12 @@ main {
         -ms-transform: translate(0px, 100px);
     }
 }
+
+
+/* section 2*/
+
+.linkedIn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
