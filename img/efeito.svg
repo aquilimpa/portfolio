@@ -1,0 +1,483 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3596.806" height="1602.001" viewBox="0 0 3596.806 1602.001">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="245" height="249" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="efeito" transform="translate(6199.806 5.001)">
+    <g id="Elipse_8" data-name="Elipse 8" transform="translate(-6088 168)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="68" cy="68" r="68" stroke="none"/>
+      <circle cx="68" cy="68" r="64" fill="none"/>
+    </g>
+    <g id="Elipse_12" data-name="Elipse 12" transform="translate(-5388.46 961.934)" fill="none" stroke="#ffb633" stroke-width="8">
+      <ellipse cx="38.905" cy="38.905" rx="38.905" ry="38.905" stroke="none"/>
+      <ellipse cx="38.905" cy="38.905" rx="34.905" ry="34.905" fill="none"/>
+    </g>
+    <g id="Elipse_9" data-name="Elipse 9" transform="translate(-5896 355)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <g id="Elipse_17" data-name="Elipse 17" transform="translate(-4702 1223)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <g id="Elipse_13" data-name="Elipse 13" transform="translate(-5792 986)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <g id="Elipse_16" data-name="Elipse 16" transform="translate(-3566 3)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <g id="Elipse_15" data-name="Elipse 15" transform="translate(-6000 1244)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <g id="Elipse_11" data-name="Elipse 11" transform="translate(-5234 74)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <g id="Elipse_10" data-name="Elipse 10" transform="translate(-6130 164)" fill="none" stroke="#ffb633" stroke-width="8">
+      <circle cx="21" cy="21" r="21" stroke="none"/>
+      <circle cx="21" cy="21" r="17" fill="none"/>
+    </g>
+    <line id="Linha_10" data-name="Linha 10" y1="188.43" x2="245.53" transform="translate(-6162.5 115.68)" fill="none" stroke="#ffb633" stroke-width="8"/>
+    <line id="Linha_15" data-name="Linha 15" x1="140.475" y1="107.806" transform="translate(-5408.502 932)" fill="none" stroke="#ffb633" stroke-width="8"/>
+    <line id="Linha_11" data-name="Linha 11" y1="188.43" x2="245.53" transform="translate(-6197.37 185.085)" fill="none" stroke="#ffb633" stroke-width="8"/>
+    <line id="Linha_14" data-name="Linha 14" x1="140.475" y1="107.806" transform="translate(-5388.552 971.709)" fill="none" stroke="#ffb633" stroke-width="8"/>
+    <line id="Linha_12" data-name="Linha 12" y1="188.43" x2="245.53" transform="translate(-6122.53 167.07)" fill="none" stroke="#ffb633" stroke-width="8"/>
+    <line id="Linha_13" data-name="Linha 13" x1="140.475" y1="107.806" transform="translate(-5431.37 961.402)" fill="none" stroke="#ffb633" stroke-width="8"/>
+    <g id="Grupo_18" data-name="Grupo 18" transform="translate(0 15.499)">
+      <line id="Linha_16" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_23" data-name="Grupo 23" transform="translate(900 472.499)">
+      <line id="Linha_16-2" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-2" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_26" data-name="Grupo 26" transform="translate(1801 -181.501)">
+      <line id="Linha_16-3" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-3" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_19" data-name="Grupo 19" transform="translate(-615 199.499)">
+      <line id="Linha_16-4" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-4" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_20" data-name="Grupo 20" transform="translate(-281 -345.501)">
+      <line id="Linha_16-5" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-5" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_24" data-name="Grupo 24" transform="translate(619 111.499)">
+      <line id="Linha_16-6" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-6" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_27" data-name="Grupo 27" transform="translate(1520 -542.501)">
+      <line id="Linha_16-7" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-7" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_21" data-name="Grupo 21" transform="translate(90 -378.501)">
+      <line id="Linha_16-8" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-8" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_25" data-name="Grupo 25" transform="translate(990 78.499)">
+      <line id="Linha_16-9" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-9" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_28" data-name="Grupo 28" transform="translate(1891 -575.501)">
+      <line id="Linha_16-10" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-10" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Grupo_22" data-name="Grupo 22" transform="translate(-775 408.499)">
+      <line id="Linha_16-11" data-name="Linha 16" y2="36.501" transform="translate(-5318.248 570.5)" fill="none" stroke="#ffb633" stroke-width="8"/>
+      <line id="Linha_17-11" data-name="Linha 17" y1="36.501" transform="matrix(-0.017, -1, 1, -0.017, -5336.495, 589.069)" fill="none" stroke="#ffb633" stroke-width="8" opacity="0.9"/>
+    </g>
+    <g id="Repetição_de_grade_1" data-name="Repetição de grade 1" transform="translate(-4469 7)" clip-path="url(#clip-path)">
+      <g transform="translate(5228 -279)">
+        <circle id="Elipse_14" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -279)">
+        <circle id="Elipse_14-2" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -279)">
+        <circle id="Elipse_14-3" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -279)">
+        <circle id="Elipse_14-4" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -279)">
+        <circle id="Elipse_14-5" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -279)">
+        <circle id="Elipse_14-6" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -279)">
+        <circle id="Elipse_14-7" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -279)">
+        <circle id="Elipse_14-8" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -247)">
+        <circle id="Elipse_14-9" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -247)">
+        <circle id="Elipse_14-10" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -247)">
+        <circle id="Elipse_14-11" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -247)">
+        <circle id="Elipse_14-12" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -247)">
+        <circle id="Elipse_14-13" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -247)">
+        <circle id="Elipse_14-14" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -247)">
+        <circle id="Elipse_14-15" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -247)">
+        <circle id="Elipse_14-16" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -215)">
+        <circle id="Elipse_14-17" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -215)">
+        <circle id="Elipse_14-18" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -215)">
+        <circle id="Elipse_14-19" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -215)">
+        <circle id="Elipse_14-20" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -215)">
+        <circle id="Elipse_14-21" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -215)">
+        <circle id="Elipse_14-22" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -215)">
+        <circle id="Elipse_14-23" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -215)">
+        <circle id="Elipse_14-24" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -183)">
+        <circle id="Elipse_14-25" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -183)">
+        <circle id="Elipse_14-26" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -183)">
+        <circle id="Elipse_14-27" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -183)">
+        <circle id="Elipse_14-28" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -183)">
+        <circle id="Elipse_14-29" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -183)">
+        <circle id="Elipse_14-30" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -183)">
+        <circle id="Elipse_14-31" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -183)">
+        <circle id="Elipse_14-32" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -151)">
+        <circle id="Elipse_14-33" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -151)">
+        <circle id="Elipse_14-34" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -151)">
+        <circle id="Elipse_14-35" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -151)">
+        <circle id="Elipse_14-36" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -151)">
+        <circle id="Elipse_14-37" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -151)">
+        <circle id="Elipse_14-38" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -151)">
+        <circle id="Elipse_14-39" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -151)">
+        <circle id="Elipse_14-40" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -119)">
+        <circle id="Elipse_14-41" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -119)">
+        <circle id="Elipse_14-42" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -119)">
+        <circle id="Elipse_14-43" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -119)">
+        <circle id="Elipse_14-44" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -119)">
+        <circle id="Elipse_14-45" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -119)">
+        <circle id="Elipse_14-46" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -119)">
+        <circle id="Elipse_14-47" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -119)">
+        <circle id="Elipse_14-48" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -87)">
+        <circle id="Elipse_14-49" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -87)">
+        <circle id="Elipse_14-50" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -87)">
+        <circle id="Elipse_14-51" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -87)">
+        <circle id="Elipse_14-52" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -87)">
+        <circle id="Elipse_14-53" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -87)">
+        <circle id="Elipse_14-54" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -87)">
+        <circle id="Elipse_14-55" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -87)">
+        <circle id="Elipse_14-56" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -55)">
+        <circle id="Elipse_14-57" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -55)">
+        <circle id="Elipse_14-58" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -55)">
+        <circle id="Elipse_14-59" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -55)">
+        <circle id="Elipse_14-60" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -55)">
+        <circle id="Elipse_14-61" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -55)">
+        <circle id="Elipse_14-62" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -55)">
+        <circle id="Elipse_14-63" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -55)">
+        <circle id="Elipse_14-64" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+    </g>
+    <g id="Repetição_de_grade_2" data-name="Repetição de grade 2" transform="translate(-2848 1348)" clip-path="url(#clip-path)">
+      <g transform="translate(5228 -279)">
+        <circle id="Elipse_14-65" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -279)">
+        <circle id="Elipse_14-66" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -279)">
+        <circle id="Elipse_14-67" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -279)">
+        <circle id="Elipse_14-68" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -279)">
+        <circle id="Elipse_14-69" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -279)">
+        <circle id="Elipse_14-70" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -279)">
+        <circle id="Elipse_14-71" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -279)">
+        <circle id="Elipse_14-72" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -247)">
+        <circle id="Elipse_14-73" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -247)">
+        <circle id="Elipse_14-74" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -247)">
+        <circle id="Elipse_14-75" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -247)">
+        <circle id="Elipse_14-76" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -247)">
+        <circle id="Elipse_14-77" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -247)">
+        <circle id="Elipse_14-78" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -247)">
+        <circle id="Elipse_14-79" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -247)">
+        <circle id="Elipse_14-80" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -215)">
+        <circle id="Elipse_14-81" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -215)">
+        <circle id="Elipse_14-82" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -215)">
+        <circle id="Elipse_14-83" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -215)">
+        <circle id="Elipse_14-84" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -215)">
+        <circle id="Elipse_14-85" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -215)">
+        <circle id="Elipse_14-86" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -215)">
+        <circle id="Elipse_14-87" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -215)">
+        <circle id="Elipse_14-88" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -183)">
+        <circle id="Elipse_14-89" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -183)">
+        <circle id="Elipse_14-90" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -183)">
+        <circle id="Elipse_14-91" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -183)">
+        <circle id="Elipse_14-92" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -183)">
+        <circle id="Elipse_14-93" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -183)">
+        <circle id="Elipse_14-94" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -183)">
+        <circle id="Elipse_14-95" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -183)">
+        <circle id="Elipse_14-96" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -151)">
+        <circle id="Elipse_14-97" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -151)">
+        <circle id="Elipse_14-98" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -151)">
+        <circle id="Elipse_14-99" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -151)">
+        <circle id="Elipse_14-100" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -151)">
+        <circle id="Elipse_14-101" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -151)">
+        <circle id="Elipse_14-102" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -151)">
+        <circle id="Elipse_14-103" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -151)">
+        <circle id="Elipse_14-104" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -119)">
+        <circle id="Elipse_14-105" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -119)">
+        <circle id="Elipse_14-106" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -119)">
+        <circle id="Elipse_14-107" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -119)">
+        <circle id="Elipse_14-108" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -119)">
+        <circle id="Elipse_14-109" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -119)">
+        <circle id="Elipse_14-110" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -119)">
+        <circle id="Elipse_14-111" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -119)">
+        <circle id="Elipse_14-112" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -87)">
+        <circle id="Elipse_14-113" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -87)">
+        <circle id="Elipse_14-114" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -87)">
+        <circle id="Elipse_14-115" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -87)">
+        <circle id="Elipse_14-116" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -87)">
+        <circle id="Elipse_14-117" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -87)">
+        <circle id="Elipse_14-118" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -87)">
+        <circle id="Elipse_14-119" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -87)">
+        <circle id="Elipse_14-120" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5228 -55)">
+        <circle id="Elipse_14-121" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5260 -55)">
+        <circle id="Elipse_14-122" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5292 -55)">
+        <circle id="Elipse_14-123" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5324 -55)">
+        <circle id="Elipse_14-124" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5356 -55)">
+        <circle id="Elipse_14-125" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5388 -55)">
+        <circle id="Elipse_14-126" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5420 -55)">
+        <circle id="Elipse_14-127" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+      <g transform="translate(5452 -55)">
+        <circle id="Elipse_14-128" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(-5228 279)" fill="#ffb633"/>
+      </g>
+    </g>
+  </g>
+</svg>
