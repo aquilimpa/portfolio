@@ -156,17 +156,17 @@
 /* Blaziken */
 
 .flex--blaziken .flex__item--left {
-    background: #E9E9E9;
+    background: rgb(19, 182, 247);
 }
 
 .flex--blaziken .flex__item--right {
-    background: #ffffff;
+    background: #f19101;
 }
 
 /* Dialga */
 
 .flex--dialga .flex__item--left {
-    background: #476089;
+    background: #0eb89b;
 }
 
 .flex--dialga .flex__item--right {
