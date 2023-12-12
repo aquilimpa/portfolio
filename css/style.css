@@ -108,7 +108,6 @@ body {
 .photo {
     display: flex;
     width: 666px;
-    height: 566px;
     flex-shrink: 1;
     margin: auto;
 }
@@ -428,8 +427,8 @@ body {
 
     .photo {
         width: 100%;
-        margin: 50px 16px 0 16px;
-        align-items: start;
+        margin: 24px 16px 0 16px !important;
+    
     }
 
 
@@ -449,7 +448,7 @@ body {
         flex-shrink: 0;
         flex-flow: row wrap;
         flex-shrink: 1;
-        margin: auto;
+        margin: 0px !important;
         align-items: center;
     }
 
@@ -475,7 +474,7 @@ body {
         flex-shrink: 0;
         flex-flow: row wrap;
         flex-shrink: 1;
-        margin: auto;
+        margin: 0px !important;
         align-items: center;
     }
 
@@ -494,7 +493,6 @@ body {
         margin: 25px 16px 0 16px;
         align-items: start;
         flex-shrink: 1;
-        margin: auto;
     }
     .mar1{
         margin: 80px 0 0 0px !important;
