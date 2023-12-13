@@ -17,20 +17,18 @@
 
     .apresentation-about {
         font-size: 14px !important;
-        margin: 50px 16px 0 16px !important;
+        margin: 24x 16px 24px 16px !important;
         width: auto !important;
         text-align: center  !important;
     }
 
     .section-one {
-        height: 100vh  !important;
         width: 98vw  !important;
-
     }
 
     .apresentation-buttom {
         width: auto  !important;
-        margin: 75px 16px 0 16px  !important;
+        margin: 24px 16px 24px 16px  !important;
     }
 
     .apresentation-buttom:hover {
@@ -50,18 +48,17 @@
     }
 
     .section-two {
-        height: 100vh  !important;
         width: 98vw !important;
-        align-items: flex-start !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
     .portfolio  {
         margin: 48px 16px 16px 16px !important;
         display: flex !important;
-        flex-shrink: 1 !important;
         flex-flow: row wrap !important;
         width: 100% !important;
-        justify-content: space-around !important;
+        justify-content: center !important;
         align-items: center !important;
     }
 
@@ -76,31 +73,16 @@
     }
 
     .section-tree {
-        height: 100vh  !important;
         width: 98vw  !important;
         align-items: flex-start !important;
     }
 
     .amostra {
-        margin: 192px 0 0 !important;
+        margin: 24px 0 0 0 !important;
         display: flex  !important;
-        flex-shrink: 0  !important;
         flex-flow: row wrap  !important;
-        flex-shrink: 1  !important;
         align-items: center  !important;
     }
-
-    .amostra-title1 {
-        font-size: 50px  !important;
-        margin: 18rem 16px 2rem 16px !important;
-        color: #212121 !important;
-        line-height: 65px !important;
-        font-style: normal !important;
-        font-weight: 600 !important;
-        text-align: center !important;
-        font-family: 'Saira Condensed', sans-serif !important;
-    }
-
 
     .amostra-title {
         font-family: 'Montserrat', sans-serif !important;
@@ -113,12 +95,13 @@
     }
 
     .amostra-title1 {
-        font-size: 50px !important;
-        margin: 1rem 0 2rem 0 !important;
+        font-size: 42px !important;
+        margin: 16px 16px 16px 16px !important;
         color: #212121 !important;
         line-height: 65px !important;
         font-style: normal !important;
         font-weight: 600 !important;
+        text-align: center !important;
         font-family: 'Saira Condensed', sans-serif !important;
     }
 
@@ -126,7 +109,6 @@
         width: 100% !important;
         margin: 25px 16px 0 16px !important;
         align-items: start !important;
-        flex-shrink: 1 !important;
     }
 
     .mar1 {
