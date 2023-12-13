@@ -2,22 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Saira+Condensed:wght@100;200;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100&display=swap');
 
-@media only screen and (max-device-width: 375px) {
-    .apresentation-Ola {
+@media only screen and (min-device-width: 375px) and (max-device-width: 480px) {
+    .apresentation-title1 {
         margin: 16px 16px 0 16px !important;
         font-size: 36px !important;
         text-align: center !important;
     }
 
-    .apresentation-eusou {
+    .apresentation-title2 {
         text-align: center !important;
         font-size: 50px !important;
         margin: 16px 16px 0 35px !important;
     }
 
-    .apresentation-about {
+    .apresentation-intro {
         font-size: 14px !important;
-        margin: 50px 16px 0 16px !important;
+        margin: 50px 16px 16px 16px !important;
         width: auto !important;
         text-align: center  !important;
     }
@@ -30,7 +30,7 @@
 
     .apresentation-buttom {
         width: auto  !important;
-        margin: 75px 16px 0 16px  !important;
+        margin: 48px 16px 0 16px  !important;
     }
 
     .apresentation-buttom:hover {
@@ -91,7 +91,7 @@
     }
 
     .amostra-title1 {
-        font-size: 50px  !important;
+        font-size: 42px  !important;
         margin: 18rem 16px 2rem 16px !important;
         color: #212121 !important;
         line-height: 65px !important;
@@ -113,7 +113,7 @@
     }
 
     .amostra-title1 {
-        font-size: 70px !important;
+        font-size: 42px !important;
         margin: 1rem 0 2rem 0 !important;
         color: #212121 !important;
         line-height: 65px !important;
@@ -139,22 +139,22 @@
         font-size: 68px !important;
     }
 }
-@media only screen and (max-device-width: 600px) {
-    .apresentation-Ola {
+@media only screen and (min-device-width: 481px) and (max-device-width: 600px) {
+    .apresentation-title1 {
         margin: 16px 16px 0 16px !important;
         font-size: 36px !important;
         text-align: center !important;
     }
 
-    .apresentation-eusou {
+    .apresentation-title2 {
         text-align: center !important;
         font-size: 50px !important;
         margin: 16px 16px 0 35px !important;
     }
 
-    .apresentation-about {
+    .apresentation-intro {
         font-size: 14px !important;
-        margin: 50px 16px 0 16px !important;
+        margin: 50px 16px 16px 16px !important;
         width: auto !important;
         text-align: center !important;
     }
@@ -167,7 +167,7 @@
 
     .apresentation-buttom {
         width: auto !important;
-        margin: 75px 16px 0 16px !important;
+        margin: 48px 16px 0 16px !important;
     }
 
     .apresentation-buttom:hover {
@@ -221,14 +221,14 @@
     .amostra {
         margin: 16px 0 0 !important;
         display: flex !important;
-        flex-shrink: 0 !important;
+        
         flex-flow: row wrap !important;
         flex-shrink: 1 !important;
         align-items: center  !important;
     }
 
     .amostra-title1 {
-        font-size: 50px !important;
+        font-size: 42px !important;
         margin: 18rem 16px 2rem 16px !important;
         color: #212121 !important;
         line-height: 65px !important;
@@ -266,22 +266,22 @@
         font-size: 68px !important;
     }
 }
-@media only screen and (max-device-width: 700px) {
-    .apresentation-Ola {
+@media only screen and (min-device-width: 601px) and (max-device-width: 700px) {
+    .apresentation-title1 {
         margin: 16px 16px 0 16px !important;
         font-size: 36px !important;
         text-align: center !important;
     }
 
-    .apresentation-eusou {
+    .apresentation-title2 {
         text-align: center !important;
         font-size: 50px !important;
         margin: 16px 16px 0 35px !important;
     }
 
-    .apresentation-about {
+    .apresentation-intro {
         font-size: 14px !important;
-        margin: 50px 16px 0 16px !important;
+        margin: 50px 16px 16px 16px !important;
         width: auto !important;
         text-align: center !important;
     }
@@ -294,7 +294,7 @@
 
     .apresentation-buttom {
         width: auto !important;
-        margin: 75px 16px 0 16px !important;
+        margin: 48px 16px 0 16px !important;
     }
 
     .apresentation-buttom:hover {
@@ -348,14 +348,14 @@
     .amostra {
         margin: 16px 0 0 !important;
         display: flex !important;
-        flex-shrink: 0 !important;
+        
         flex-flow: row wrap !important;
         flex-shrink: 1 !important;
         align-items: center !important;
     }
 
     .amostra-title1 {
-        font-size: 50px !important;
+        font-size: 42px !important;
         margin: 18rem 16px 2rem 16px !important;
         color: #212121 !important;
         line-height: 65px !important;
@@ -393,22 +393,22 @@
         font-size: 68px !important;
     }
 }
-@media only screen and (max-device-width: 800px) {
-    .apresentation-Ola {
+@media only screen and (min-device-width: 701px) and (max-device-width: 800px) {
+    .apresentation-title1 {
         margin: 16px 16px 0 16px !important;
         font-size: 36px !important;
         text-align: center !important;
     }
 
-    .apresentation-eusou {
+    .apresentation-title2 {
         text-align: center !important;
         font-size: 50px !important;
         margin: 16px 16px 0 35px !important;
     }
 
-    .apresentation-about {
+    .apresentation-intro {
         font-size: 14px !important;
-        margin: 50px 16px 0 16px !important;
+        margin: 50px 16px 16px 16px !important;
         width: auto !important;
         text-align: center !important;
     }
@@ -421,7 +421,7 @@
 
     .apresentation-buttom {
         width: auto !important;
-        margin: 75px 16px 0 16px !important;
+        margin: 48px 16px 0 16px !important;
     }
 
     .apresentation-buttom:hover {
@@ -475,14 +475,14 @@
     .amostra {
         margin: 16px 0 0 !important;
         display: flex !important;
-        flex-shrink: 0 !important;
+        
         flex-flow: row wrap !important;
         flex-shrink: 1 !important;
         align-items: center !important;
     }
 
     .amostra-title1 {
-        font-size: 50px !important;
+        font-size: 42px !important;
         margin: 18rem 16px 2rem 16px !important;
         color: #212121 !important;
         line-height: 65px !important;
@@ -520,22 +520,22 @@
         font-size: 68px !important;
     }
 }
-@media only screen and (max-device-width: 900px) {
-    .apresentation-Ola {
+@media only screen and (min-device-width: 801px) and (max-device-width: 1024px) {
+    .apresentation-title1 {
         margin: 16px 16px 0 16px !important;
         font-size: 36px !important;
         text-align: center !important;
     }
 
-    .apresentation-eusou {
+    .apresentation-title2 {
         text-align: center !important;
         font-size: 50px !important;
         margin: 16px 16px 0 35px !important;
     }
 
-    .apresentation-about {
+    .apresentation-intro {
         font-size: 14px !important;
-        margin: 50px 16px 0 16px !important;
+        margin: 50px 16px 16px 16px !important;
         width: auto !important;
         text-align: center !important;
     }
@@ -548,7 +548,7 @@
 
     .apresentation-buttom {
         width: auto !important;
-        margin: 75px 16px 0 16px !important;
+        margin: 48px 16px 0 16px !important;
     }
 
     .apresentation-buttom:hover {
@@ -603,14 +603,14 @@
     .amostra {
         margin: 16px 0 0 !important;
         display: flex !important;
-        flex-shrink: 0 !important;
+        
         flex-flow: row wrap !important;
         flex-shrink: 1 !important;
         align-items: center !important;
     }
 
     .amostra-title1 {
-        font-size: 50px !important;
+        font-size: 42px !important;
         margin: 5rem 16px 2rem 16px !important;
         color: #212121 !important;
         line-height: 65px !important;
