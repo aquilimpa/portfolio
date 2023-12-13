@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Saira+Condensed:wght@100;200;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100&display=swap');
-@import url('list-of-media-queries.css') (max-device-width: 375px), (max-device-width: 600px), (max-device-width: 700px), (max-device-width: 800px), (max-device-width: 900px);
-
+@import url('list-of-media-queries.css') (min-device-width: 300px)  and  (max-device-width: 900px);
 :root {
     --backgroud-color: #EEEEEC;
     --text-color: #212121;
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-    background: var(--backgroud-color) url('../img/background.svg') no-repeat left bottom fixed !important;
+    background: var(--backgroud-color);
 }
 
 
@@ -28,8 +27,8 @@ body {
     display: flex !important;
     flex-flow: row wrap !important;
     align-items: center !important;
-    justify-content: center !important;
-
+    justify-content: space-between !important;
+    
 }
 
 .section-one {
@@ -39,6 +38,7 @@ body {
     flex-flow: row wrap !important;
     align-items: center !important;
     justify-content: center !important;
+    background: url('../img/background.svg') no-repeat left bottom fixed !important;
 }
 
 .apresentation {
@@ -106,7 +106,7 @@ body {
 }
 
 .apresentation-buttom:hover {
-    color: var (--color-white);
+    color: var(--color-white);
     transition: all 1s !important;
     transform: translateY(-10px) !important;
     background: linear-gradient(45deg, --primary-color, --secondary-color);
@@ -149,7 +149,7 @@ body {
     width: 520px;
     height: 55px;
     display: flex;
-    color: var (--text-color);
+    color: var(--text-color);
     flex-shrink: 1;
     font-size: 15px;
     font-weight: 800;
@@ -180,7 +180,6 @@ body {
 
 .amostra-title {
     font-weight: 500;
-    text-align: center;
     width: auto !important;
     height: auto !important;
     margin: 24px 16px 0 80px;
@@ -190,7 +189,7 @@ body {
 
 .amostra-title1 {
     font-size: 70px;
-    color: var (--text-color);
+    color: var(--text-color);
     line-height: 65px;
     font-style: normal;
     font-weight: 600 !important;
@@ -202,12 +201,4 @@ body {
     width: 100%;
     flex-shrink: 1;
     margin: 1rem 0 3rem 0 !important;
-}
-
-.mar1 {
-    margin: 0 0 0 68px !important;
-}
-
-.mar2 {
-    margin: 0 0 0 68px !important;
 }
