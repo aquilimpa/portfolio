@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap');
-@import url('list-of-media-queries.css') (min-device-width: 300px) and (max-device-width: 900px);
+@import url('list-of-media-queries.css') (min-device-width: 300px) and (max-device-width: 900px), (min-device-width: 337px) and  (max-device-height: 667px);
 
 :root {
     --backgroud-color: #EEEEEC;
