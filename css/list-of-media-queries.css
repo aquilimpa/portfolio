@@ -24,6 +24,9 @@
 
     .section-one {
         width: 98vw  !important;
+        height: 52vh !important;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
 
     .apresentation-buttom {
@@ -35,16 +38,57 @@
         transition: all 1s !important;
         transform: translateY(-10px) !important;
     }
+    .cardHero{
+        visibility: hidden;
+    }
 
-    .photo {
-        width: 100%  !important;
-        margin: 24px 16px 0 16px !important;
+    .container-grid {
+        display: flex!important;
+        flex-direction: column!important;
+        background: none !important;
+    
+    }
+
+    #item-1 {
+        margin: 0 !important;
 
     }
 
+    #item-2 {
+        margin: 0 !important;
 
-    .photo-eu {
-        width: 100%  !important;
+    }
+    #item-3 {
+        margin: 0 !important;
+
+    }
+    #item-4 {
+        margin: 0 !important;
+
+    }
+    #item-5 {
+        margin: 0 !important;
+
+    }
+    #item-6 {
+        margin: 0 !important;
+
+    }
+    #item-7 {
+        margin: 0 !important;
+
+    }
+    #item-8 {
+        margin: 0 !important;
+
+    }
+    #item-9 {
+        margin: 0 !important;
+
+    }
+    #item-10 {
+        margin: 0 !important;
+
     }
 
     .section-two {
