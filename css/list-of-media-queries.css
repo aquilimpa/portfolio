@@ -5,6 +5,7 @@
 @media only screen and (min-device-width: 337px) and  (max-device-height: 667px){
     .section-one {
         height: 68vh !important;
+        margin-bottom: 24px !important;
     }
 }
 
