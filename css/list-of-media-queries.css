@@ -7,6 +7,12 @@
         height: 68vh !important;
         margin-bottom: 24px !important;
     }
+    .section-two {
+        margin-top: 48px !important;
+        width: 98vw !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
 }
 
 @media only screen and (min-device-width: 300px) and  (max-device-width: 1027px) {
@@ -99,6 +105,7 @@
     }
 
     .section-two {
+        margin-top: 48px !important;
         width: 98vw !important;
         align-items: center !important;
         justify-content: center !important;
