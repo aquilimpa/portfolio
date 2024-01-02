@@ -4,7 +4,6 @@
 
 @media only screen and (min-device-width: 337px) and  (max-device-height: 667px){
     .section-one {
-        height: 68vh !important;
         margin-bottom: 24px !important;
     }
     .section-two {
@@ -37,7 +36,6 @@
 
     .section-one {
         width: 98vw  !important;
-        height: 52vh ;
         flex-direction: column !important;
         justify-content: center !important;
     }
@@ -51,58 +49,12 @@
         transition: all 1s !important;
         transform: translateY(-10px) !important;
     }
-    .cardHero{
-        visibility: hidden;
-    }
-
-    .container-grid {
-        display: flex!important;
-        flex-direction: column!important;
-        background: none !important;
     
+    .photo{
+        width: 100% !important;
+        margin: 0 16px !important;
     }
-
-    #item-1 {
-        margin: 0 !important;
-
-    }
-
-    #item-2 {
-        margin: 0 !important;
-
-    }
-    #item-3 {
-        margin: 0 !important;
-
-    }
-    #item-4 {
-        margin: 0 !important;
-
-    }
-    #item-5 {
-        margin: 0 !important;
-
-    }
-    #item-6 {
-        margin: 0 !important;
-
-    }
-    #item-7 {
-        margin: 0 !important;
-
-    }
-    #item-8 {
-        margin: 0 !important;
-
-    }
-    #item-9 {
-        margin: 0 !important;
-
-    }
-    #item-10 {
-        margin: 0 !important;
-
-    }
+    
 
     .section-two {
         margin-top: 48px !important;
@@ -111,23 +63,13 @@
         justify-content: center !important;
     }
 
-    .portfolio  {
+    .experiencia  {
         margin: 48px 16px 16px 16px !important;
         display: flex !important;
         flex-flow: row wrap !important;
         width: 100% !important;
         justify-content: center !important;
         align-items: center !important;
-    }
-
-    .portfolio-about {
-        font-family: 'Montserrat', sans-serif !important;
-        font-weight: 500 !important;
-        font-size: 16px !important;
-        margin: 0px 16px 0 16px !important;
-        width: auto !important;
-        height: auto !important;
-        text-align: center !important;
     }
 
     .section-tree {
