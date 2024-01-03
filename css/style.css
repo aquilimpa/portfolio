@@ -135,7 +135,8 @@ a {
 }
 
 .container-linkedin {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 70%;
     left: 90%;
     align-items: center;
