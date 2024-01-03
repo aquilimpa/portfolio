@@ -7,7 +7,7 @@
 
 :root {
     --backgroud-color: #EEEEEC;
-    --two-color: #E9E9E9;
+    --two-color: E5E5E5;
     --text-color: #212121;
     --color-white: white;
     --primary-color: #9302FC;
@@ -155,7 +155,7 @@ a {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-    background-color: var(--two-color);
+    background-color: var(--two-color) !important;
     background: url('../img/two.svg') no-repeat left bottom fixed !important;
 }
 
