@@ -171,7 +171,7 @@ a {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    
+
 }
 
 .two-title {
@@ -212,6 +212,13 @@ a {
     font-style: normal;
     font-weight: 600 !important;
     font-family: 'Saira Condensed', sans-serif;
+}
+
+.container-titleAcad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .exper-titleAcad {
@@ -282,5 +289,75 @@ a {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+}
+
+.three {
+    padding: 48px 0px 48px 0px;
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: #EEEEEC !important;
+    background: url('../img/three.svg') #EEEEEC no-repeat left bottom fixed !important;
+}
+
+.three-title {
+    font-size: 70px;
+    margin: 1rem 0 2rem 5rem !important;
+    color: var(--text-color);
+    line-height: 65px;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.three-projetos {
+    padding-top: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 113px;
+}
+
+
+
+.projetos-title {
+    color: var(--text-color);
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.projetos-SubTitle {
+    color: var(--primary-color);
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.container-projetosText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.projetos-img {
+    width: 377px;
+    height: 252px;
+    color: #D9D9D9;
+}
+
+.projetos-text {
+    width: 700px;
+    color: var(--text-color);
+    font-family: 'Open San', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
     line-height: normal;
 }
