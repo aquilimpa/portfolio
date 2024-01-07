@@ -12,6 +12,7 @@
     --color-white: white;
     --primary-color: #9302FC;
     --secondary-color: #bc4dfc;
+    --footer-color: #0F8BFA;
 }
 
 * {
@@ -302,7 +303,7 @@ a {
 
 .three-title {
     font-size: 70px;
-    margin: 1rem 0 2rem 5rem !important;
+    margin: 1rem 0 2rem 5rem ;
     color: var(--text-color);
     line-height: 65px;
     font-style: normal;
@@ -320,7 +321,6 @@ a {
 }
 
 
-
 .projetos-title {
     color: var(--text-color);
     font-family: 'Saira Condensed', sans-serif;
@@ -328,6 +328,10 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+.none{
+    
+    display: none;
 }
 
 .projetos-SubTitle {
@@ -360,4 +364,81 @@ a {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+
+.four {
+    padding: 48px 80px;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between;
+    background-color: var(--footer-color) !important;
+
+}
+
+.four-container1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.four-subTitle {
+    color: var(--color-white);
+    font-family: 'Open San', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 500px;
+    height: 118px;
+}
+
+.container-contatIcon {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+}
+
+.icon-contact {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white) !important;
+    font-family: 'Open San', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none !important;
+}
+
+.four-container2 {
+    display: flex;
+    padding: 0% 16% 0% 16%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.four-title {
+    font-size: 70px;
+    margin: 1rem 0 2rem 0 !important;
+    color: var(--color-white);
+    line-height: 65px;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-family: 'Saira Condensed', sans-serif;
 }
