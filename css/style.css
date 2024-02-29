@@ -205,7 +205,7 @@ a {
 }
 
 .two-title {
-    font-size: 70px;
+    font-size: 64px;
     margin: 1rem 0 2rem 0 !important;
     color: var(--text-color);
     line-height: 65px;
@@ -331,7 +331,7 @@ a {
 }
 
 .three-title {
-    font-size: 70px;
+    font-size: 64px;
     margin: 1rem 0 2rem 5rem ;
     color: var(--text-color);
     line-height: 65px;
@@ -420,7 +420,7 @@ a {
 .four-subTitle {
     color: var(--text-color);
     font-family: 'Open San', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -436,8 +436,8 @@ a {
 
 .icon-contact {
     display: flex;
-    width: 24px;
-    height: 24px;
+    width: 15px;
+    height: 15px;
     padding: 12px;
     justify-content: center;
     align-items: center;
@@ -453,7 +453,7 @@ a {
     justify-content: center;
     color: var(--text-color) !important;
     font-family: 'Open San', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -469,8 +469,8 @@ a {
 }
 
 .four-title {
-    font-size: 70px;
-    margin: 1rem 0 2rem 0 !important;
+    font-size: 48px;
+    margin: 1rem 0 1rem 0 !important;
     color: var(--text-color);
     line-height: 65px;
     font-style: normal;
