@@ -16,7 +16,7 @@ html {
     --primary-color: #000;
     --secondary-color: #bc4dfc;
     --footer-color: #0F8BFA;
-    --footer-color2: #FFB800;
+    --footer-color2: #dadada;
 }
 
 * {
@@ -583,7 +583,7 @@ transition:0.5s;
 
 .dropdown-content li a:hover{
 background:none;
-color:#2874f0;
+color:#dfab02;
 }
 
 .mega-menu{
@@ -608,7 +608,7 @@ min-width:100%;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  color:#2874f0;
+  color:#dfab02;
 }
 
 .dropdown-content a:hover {

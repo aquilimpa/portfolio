@@ -16,7 +16,7 @@
 
 @media (max-width: 1024px) {
     .one {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
     .apresentation-title {
         text-align: center !important;
@@ -70,9 +70,12 @@
     }
 
     .two-subTitle {
-        margin: 16% 16% 5% 16% !important;
+        font-size: 15px !important;
+        margin: 16% 5% !important;
         text-align: center !important;
-        width: 25em !important;
+        width: 324px !important;
+        background-color: #E5E5E5 !important;
+        height: 150px !important;
     }
 
     .exper {
