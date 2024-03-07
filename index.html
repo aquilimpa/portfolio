@@ -13,12 +13,29 @@
     <title>Fabiano UI&UX Designer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+
 </head>
 
 <body>
     <div class="container">
-        <div id="menu"></div>
-        <section class="one space-around">
+
+
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#Portfólio">Portfólio</a>
+            <a href="#">Contato</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+
+        <section id="home" class="one space-around">
             <div class="apresentation center">
                 <div class="apresentation-title fade-in-left">
                     <span>
@@ -46,15 +63,10 @@
                 </div>
             </div>
             <div class="container-photo center">
-                <img class="photo text-focus-in" src="img/photo.svg" alt="Foto de Fabiano UX designer" width="100%">
-            </div>
-            <div class="container-linkedin">
-                <a href="https://www.linkedin.com/in/fabianoantero/" target="_blank">
-                    <img class="linkedin text-focus-in" src="img/linkedin.svg" alt="linkedin" srcset="">
-                </a>
+                <img class="photo text-focus-in" src="img/foto.png" alt="Foto de Fabiano UX designer">
             </div>
         </section>
-        <section class="two space-around">
+        <section id="sobre" class="two space-around">
             <div class="two-container1">
                 <div class="two-title fade-in-left">
                     <span>
@@ -157,7 +169,7 @@
                     </a>
                 </div>
             </div>
-            <div class="two-container2 fade-in-right">
+            <div  class="two-container2 fade-in-right">
                 <div class="exper-title">
                     Experiência Acadêmica
                 </div>
@@ -297,7 +309,7 @@
                 </a>
             </div>
         </section>
-        <section class="three">
+        <section id="Portfólio" class="three">
             <div class="three-title">
                 <span>
                     Novo Portfólio Em Construção
@@ -377,7 +389,9 @@
             </div>
         </section>
     </div>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js'></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

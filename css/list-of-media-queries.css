@@ -15,7 +15,9 @@
 /* Para telas menores*/
 
 @media (max-width: 1024px) {
-
+    .one {
+        flex-wrap: wrap;
+    }
     .apresentation-title {
         text-align: center !important;
     }
@@ -36,6 +38,9 @@
         flex-direction: column !important;
         justify-content: center !important;
         align-items: center !important;
+    }
+    .container-photo {
+        display: flex;
     }
 
     .photo {
@@ -110,8 +115,9 @@
     }
 
     .projetos-text {
+        width: 360px!important;
         margin-top: 24px !important;
-        padding: 0% 24% 0 24% !important;
+        padding: 0% 6% 0 6% !important;
         font-size: 14px !important;
         text-align: center !important;
         background-color: var(--backgroud-color) !important;
