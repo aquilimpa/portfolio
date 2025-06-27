@@ -4,7 +4,7 @@ class ContactComponent extends HTMLElement {
   this.shadow = this.attachShadow({ mode: 'open' });
 
 
-    const cssGlobal = new URL('/css/global.css', import.meta.url).href;
+    const cssGlobal = new URL('../css/global.css', import.meta.url).href;
     const template = document.createElement('template');
     template.innerHTML = `
       <link rel="stylesheet" href="${cssGlobal}">
