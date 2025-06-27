@@ -163,7 +163,7 @@ connectedCallback() {
       form.addEventListener('submit', e => {
         e.preventDefault();
         const formData = new FormData(form);
-        sendForm(formData);
+        window.sendForm(formData);
       });
     }
   }
