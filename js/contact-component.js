@@ -13,39 +13,6 @@ class ContactComponent extends HTMLElement {
       <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
       <section id="contact" class="section__container  bg__contact ">
-      <div class="section_content section_content--horizontal  section_content--contact fade-in-left-normal">
-        <div class="section__container-title section__container-title--contact">
-          <h1 class="section__title start"> <span class="orange">—</span> <span data-i18n="contact"></span></h1>
-          <h1 class="section__title--large start">
-            <span data-i18n="contact_title_start"></span>
-            <span class="orange" data-i18n="contact_title_end"></span>
-          </h1>
-          <p class="section__text  mgbt start" data-i18n="contact_sub_title"></p>
-
-          <div class="hidden">
-            <h1 class="start">
-              <span class="cidade__title">Lifters - João Pessoa / PB - Brasil</span>
-              <p class="endereco__title start">R. Fernando Luiz Henriques Dos Santos, 1271 - Jardim
-                Oceania, João Pessoa - PB, 58037-051</p>
-              <a class="gosht__button" target="_blank" href="">
-                <span data-i18n="learn_more">
-                </span>
-                <i class="ph ph-arrow-right"></i>
-              </a>
-            </h1>
-            <h1 class="start">
-              <span class="cidade__title">Lifters - Campina grande / PB - Brasil</span>
-              <p class="endereco__title start">R. Vidal de Negreiros, 231 - Centro, Campina Grande - PB,
-                58400-263</p>
-              <a class="gosht__button" target="_blank" href="">
-                <span data-i18n="learn_more"></span>
-                <i class="ph ph-arrow-right"></i>
-              </a>
-            </h1>
-          </div>
-        </div>
-        <!-- form -->
-        <div class="media contact__form fade-in-normal">
           <form class="form" id="contact-form-2" novalidate action="#" method="POST">
             <div class="form__row">
               <div class="form__group">
@@ -128,30 +95,6 @@ class ContactComponent extends HTMLElement {
               <button type="submit" class="btn__primary" data-i18n="form_submit"></button>
             </div>
           </form>
-        </div>
-        <div class="show__mobile ">
-          <h1 class="mgbt">
-            <span class="cidade__title">Lifters - João Pessoa / PB - Brasil</span>
-            <p class="endereco__title ">R. Fernando Luiz Henriques Dos Santos, 1271 <br> Jardim
-              Oceania, João Pessoa - PB, 58037-051</p>
-            <a class="gosht__button" target="_blank" href="">
-              <span data-i18n="learn_more">
-              </span>
-              <i class="ph ph-arrow-right"></i>
-            </a>
-          </h1>
-          <h1>
-            <span class="cidade__title">Lifters - Campina grande / PB - Brasil</span>
-            <p class="endereco__title">R. Vidal de Negreiros, 231 - Centro, <br> Campina Grande - PB,
-              58400-263</p>
-            <a class="gosht__button" target="_blank" href="">
-              <span data-i18n="learn_more"></span>
-              <i class="ph ph-arrow-right"></i>
-            </a>
-          </h1>
-        </div>
-
-      </div>
     </section>
     `;
     this.shadow.appendChild(template.content.cloneNode(true));
