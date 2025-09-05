@@ -1,461 +1,838 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content=" 
-    Designer de UI&UX apaixonado por transformar visões em experiências memoráveis.
-    Com habilidades distintas em unir estética e usabilidade, estou pronto para dar
-    vida aos seus projetos de forma impactante.
-    UX Designer, UI Designer, buscando por uma experiência de usuário incrivel?,
-    experiência do usuário, freela em UX/UI, interface do usuário">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabiano UI&UX Designer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animation.css">
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "qmp59h4qs6");
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fabiano Antero UI/UX • Product Designer</title>
+  <meta name="description" content="Portfólio dark, inovador e moderno para UI/UX Designer, feito com Bootstrap." />
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #7c5cff;
+      /* Roxo neon */
+      --accent-2: #14f1d9;
+      /* Ciano neon */
+      --text-muted: #a9b0c0;
+      --bg-0: #0b0e13;
+      /* Fundo principal */
+      --bg-1: #0f141b;
+      /* Cartões */
+      --ring: rgba(124, 92, 255, .45);
+      --shadow: 0 10px 30px rgba(0, 0, 0, .45);
+      --radius-2xl: 18px;
+      --radius-xl: 14px;
+      --grid-gap: 1.25rem;
+    }
+
+    html,
+    body {
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(124, 92, 255, .25), transparent 60%), radial-gradient(1000px 700px at -10% 10%, rgba(20, 241, 217, .14), transparent 60%), var(--bg-0);
+      color: #e6ebff;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px
+    }
+
+    .brand__logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      margin-right: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700
+    }
+
+    .brand__logo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      object-fit: cover
+    }
+
+    /* NAV */
+    .navbar {
+      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(10, 12, 18, .75), rgba(10, 12, 18, .30));
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .nav-link {
+      position: relative;
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: .6rem;
+      right: .6rem;
+      bottom: .35rem;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .25s ease;
+      border-radius: 2px
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1)
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      padding-top: 8rem;
+      padding-bottom: 5rem
+    }
+
+    .hero .badge {
+      background: linear-gradient(90deg, rgba(124, 92, 255, .2), rgba(20, 241, 217, .2));
+      border: 1px solid rgba(255, 255, 255, .08);
+      color: #e6ebff
+    }
+
+    .headline {
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -.02em
+    }
+
+    .sub {
+      color: var(--text-muted)
+    }
+
+    .cta-wrap .btn {
+      border-radius: 12px;
+      padding: .9rem 1.2rem;
+      font-weight: 700
+    }
+
+    .btn-accent {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      border: 0;
+      box-shadow: 0 10px 30px rgba(124, 92, 255, .28)
+    }
+
+    .btn-accent:hover {
+      filter: brightness(1.08)
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    /* ORBES DECORATIVOS */
+    .float-orb {
+      position: absolute;
+      filter: blur(24px);
+      opacity: .35;
+      pointer-events: none;
+    }
+
+    .orb-1 {
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle at 30% 30%, var(--accent), transparent 60%);
+      top: -40px;
+      right: 10%
+    }
+
+    .orb-2 {
+      width: 240px;
+      height: 240px;
+      background: radial-gradient(circle at 60% 30%, var(--accent-2), transparent 60%);
+      bottom: -30px;
+      left: 8%
+    }
+
+    /* CARDS */
+    .card-dark {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .01));
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow)
+    }
+
+    .card-dark:hover {
+      border-color: rgba(124, 92, 255, .35)
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      gap: var(--grid-gap)
+    }
+
+    @media(min-width: 992px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    /* PROJETOS */
+    .project-thumb {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .06)
+    }
+
+    .project-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .6s ease
+    }
+
+    .project-thumb:hover img {
+      transform: scale(1.05)
+    }
+
+    .chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 12px;
+      color: var(--muted);
+
+    }
+
+    .chip__button {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+    }
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    .chip__button:hover {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #fff;
+    }
 
+    /* TIMELINE */
+    .timeline {
+      position: relative;
+      padding-left: 1.2rem
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: .4rem;
+      top: .2rem;
+      bottom: .2rem;
+      width: 2px;
+      background: linear-gradient(var(--accent), var(--accent-2))
+    }
+
+    .t-item {
+      margin-bottom: 1.2rem
+    }
+
+    .t-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      box-shadow: 0 0 0 4px rgba(20, 241, 217, .15)
+    }
+
+    /* FORM */
+    .form-control,
+    .form-select {
+      background: #0d1219;
+      border: 1px solid rgba(255, 255, 255, .08);
+      color: #e6ebff;
+      border-radius: 12px
+    }
+
+    .form-control:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 .25rem var(--ring)
+    }
+
+    /* FOOTER */
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, .06)
+    }
+
+    /* MICROINTERAÇÕES */
+    .hover-lift {
+      transition: transform .2s ease, box-shadow .2s ease
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .35)
+    }
+
+    /* UTIL */
+    .opacity-70 {
+      opacity: .7
+    }
+
+    .text-gradient {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-
-
-        <div class="topnav" id="myTopnav">
-            <a href=""><img src="./img/Logo.svg" alt=""></a>
-            <a href="#home" class="active">Inicio</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#Portfólio">Portfólio</a>
-            <a href="#contato">Contato</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-          </div>
-
-        <section id="home" class="one space-around">
-            <div class="apresentation center">
-                <div class="apresentation-title fade-in-left">
-                    <span>
-                        Olá, mundo!
-                    </span>
-                    <span class="animate-flicker">
-                        |
-                    </span>
-                </div>
-                <div class="apresentation-subTitle fade-in-left2">
-                    <span>
-                        Eu sou <br>Fabiano Antero
-                    </span>
-                </div>
-                <div class="apresentation-about fade-in-left3">
-                    <span>
-                        Designer de UI&UX apaixonado por transformar visões em experiências memoráveis.
-                        Com habilidades distintas em unir estética e usabilidade, estou pronto para dar
-                        vida aos seus projetos de forma impactante.
-                    </span>
-                </div>
-                <div class="fade-in-left4 container-buttom">
-                    <a class="buttom" href="https://www.linkedin.com/in/fabianoantero/" target="_blank">Fale
-                        comigo <img class="icon" src="img/send.svg" alt="botão para contatos" srcset=""></a>
-                </div>
-            </div>
-            <div class="container-photo center">
-                <img class="photo text-focus-in" src="img/foto.png" alt="Foto de Fabiano UX designer">
-            </div>
-        </section>
-        <section id="sobre" class="two space-around">
-            <div class="two-container1">
-                <div class="two-title fade-in-left">
-                    <span>
-                        Skills & <br> Experiência
-                    </span>
-                </div>
-                <div class="two-subTitle fade-in-left2">
-                    <span>
-                        Bacharel de Ciência da Computação, atuando como UX/UI e desenvolvimento front-end.
-                        Transformo ideias em experiências visuais envolventes, focado em soluções intuitivas para otimizar a
-                        experiência do usuário.
-                    </span>
-                </div>
-                <div class="container-buttom fade-in-left3">
-                    <a class="buttom"
-                        href="https://www.dropbox.com/scl/fi/ysj1cy2zpup82b61gebvd/Fabiano-Antero-CV-08-12-2023.pdf?rlkey=1yofifslkon7ub46nt2gb00hl&dl=0"
-                        target="_blank">Download CV<img class="icon" src="img/download.svg" alt="Download do curriculo"
-                            srcset=""></a>
-                </div>
-                <div class="exper fade-in-left">
-                    <div class="exper-title">
-                        Experiência Profiscional
-                    </div>
-                    <a href="https://tivit.com/" target="_blank">
-                        <div class="exper-card">
-                            <div class="exper-contIcon">
-                                <div class="exper-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M19 6H16V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V6H5C4.20435 6 3.44129 6.31607 2.87868 6.87868C2.31607 7.44129 2 8.20435 2 9V18C2 18.7956 2.31607 19.5587 2.87868 20.1213C3.44129 20.6839 4.20435 21 5 21H19C19.7956 21 20.5587 20.6839 21.1213 20.1213C21.6839 19.5587 22 18.7956 22 18V9C22 8.20435 21.6839 7.44129 21.1213 6.87868C20.5587 6.31607 19.7956 6 19 6ZM10 5H14V6H10V5ZM20 18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8946 19.2652 19 19 19H5C4.73478 19 4.48043 18.8946 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18V12.39L8.68 14C8.78618 14.0144 8.89382 14.0144 9 14H15C15.1084 13.998 15.2161 13.9812 15.32 13.95L20 12.39V18ZM20 10.28L14.84 12H9.16L4 10.28V9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H19C19.2652 8 19.5196 8.10536 19.7071 8.29289C19.8946 8.48043 20 8.73478 20 9V10.28Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="exper-empresa">
-                                <span class="exper-empName">TIVIT - 2022 / 2023</span> <br>
-                                <span class="exper-emptext">Gerenciamento de Serviços</span> <br>
-                                <span class="exper-emptext">UX/UI Designer</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.tbanks.com.br/home" target="_blank">
-                        <div class="exper-card">
-                            <div class="exper-contIcon">
-                                <div class="exper-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M19 6H16V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V6H5C4.20435 6 3.44129 6.31607 2.87868 6.87868C2.31607 7.44129 2 8.20435 2 9V18C2 18.7956 2.31607 19.5587 2.87868 20.1213C3.44129 20.6839 4.20435 21 5 21H19C19.7956 21 20.5587 20.6839 21.1213 20.1213C21.6839 19.5587 22 18.7956 22 18V9C22 8.20435 21.6839 7.44129 21.1213 6.87868C20.5587 6.31607 19.7956 6 19 6ZM10 5H14V6H10V5ZM20 18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8946 19.2652 19 19 19H5C4.73478 19 4.48043 18.8946 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18V12.39L8.68 14C8.78618 14.0144 8.89382 14.0144 9 14H15C15.1084 13.998 15.2161 13.9812 15.32 13.95L20 12.39V18ZM20 10.28L14.84 12H9.16L4 10.28V9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H19C19.2652 8 19.5196 8.10536 19.7071 8.29289C19.8946 8.48043 20 8.73478 20 9V10.28Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="exper-empresa">
-                                <span class="exper-empName">tbankS - 2022 / 2023</span> <br>
-                                <span class="exper-emptext">Integrador BaaS da TIVIT</span> <br>
-                                <span class="exper-emptext">UX/UI Designer</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.conpay.com.br/" target="_blank">
-                        <div class="exper-card">
-                            <div class="exper-contIcon">
-                                <div class="exper-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M19 6H16V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V6H5C4.20435 6 3.44129 6.31607 2.87868 6.87868C2.31607 7.44129 2 8.20435 2 9V18C2 18.7956 2.31607 19.5587 2.87868 20.1213C3.44129 20.6839 4.20435 21 5 21H19C19.7956 21 20.5587 20.6839 21.1213 20.1213C21.6839 19.5587 22 18.7956 22 18V9C22 8.20435 21.6839 7.44129 21.1213 6.87868C20.5587 6.31607 19.7956 6 19 6ZM10 5H14V6H10V5ZM20 18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8946 19.2652 19 19 19H5C4.73478 19 4.48043 18.8946 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18V12.39L8.68 14C8.78618 14.0144 8.89382 14.0144 9 14H15C15.1084 13.998 15.2161 13.9812 15.32 13.95L20 12.39V18ZM20 10.28L14.84 12H9.16L4 10.28V9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H19C19.2652 8 19.5196 8.10536 19.7071 8.29289C19.8946 8.48043 20 8.73478 20 9V10.28Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="exper-empresa">
-                                <span class="exper-empName">Conpay - 2020 / 2023</span> <br>
-                                <span class="exper-emptext">Pagamento e Tecnologia S.A.</span>
-                                <br>
-                                <span class="exper-emptext">UX/UI Designer | Front-end Developer.</span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="https://www.energisa.com.br/energisaon/default.aspx" target="_blank">
-                        <div class="exper-card">
-                            <div class="exper-contIcon">
-                                <div class="exper-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M19 6H16V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V6H5C4.20435 6 3.44129 6.31607 2.87868 6.87868C2.31607 7.44129 2 8.20435 2 9V18C2 18.7956 2.31607 19.5587 2.87868 20.1213C3.44129 20.6839 4.20435 21 5 21H19C19.7956 21 20.5587 20.6839 21.1213 20.1213C21.6839 19.5587 22 18.7956 22 18V9C22 8.20435 21.6839 7.44129 21.1213 6.87868C20.5587 6.31607 19.7956 6 19 6ZM10 5H14V6H10V5ZM20 18C20 18.2652 19.8946 18.5196 19.7071 18.7071C19.5196 18.8946 19.2652 19 19 19H5C4.73478 19 4.48043 18.8946 4.29289 18.7071C4.10536 18.5196 4 18.2652 4 18V12.39L8.68 14C8.78618 14.0144 8.89382 14.0144 9 14H15C15.1084 13.998 15.2161 13.9812 15.32 13.95L20 12.39V18ZM20 10.28L14.84 12H9.16L4 10.28V9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H19C19.2652 8 19.5196 8.10536 19.7071 8.29289C19.8946 8.48043 20 8.73478 20 9V10.28Z"
-                                            fill="white" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="exper-empresa">
-                                <span class="exper-empName">Grupo Energisa - 2019 / 2020</span> <br>
-                                <span class="exper-emptext">Empresa do setor elétrico</span> <br>
-                                <span class="exper-emptext">UX/UI Designer | Front-end Developer</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div  class="two-container2 fade-in-right">
-                <div class="exper-title">
-                    Experiência Acadêmica
-                </div>
-                <div class="exper-titleAcad">
-                    Ensino superior
-                </div>
-                <a href="https://www.unipe.edu.br/" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">Bacharelado em Ciências da Computação</span><br>
-                            <span class="exper-emptext">UNIPÊ - Centro Universitário de João Pessoa</span>
-                        </div>
-                    </div>
-                </a>
-                <p class="exper-titleAcad">
-                    Cursos e certificados
-                </p>
-                <a href="https://ude.my/UC-89c61d65-332a-4440-ac19-4cb2f560e673/" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">Do Figma ao código</span><br>
-                            <span class="exper-emptext">Udemy - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/65cdbe6e-0107-4b62-af05-474cb3b0c687" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">UX Product: Monitore, Mensure e teste o seu
-                                rpojeto</span><br>
-                            <span class="exper-emptext">Alura - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/07c7be73-46ec-44a1-97dc-1b3857a53240" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">UX Usability: Facilite a vida de seu usuário no
-                                mobile</span><br>
-                            <span class="exper-emptext">Alura - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/b22fb254-0948-49ce-9fb2-8d8fee4c5492" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">UX Strategy: Divergindo e afunilando ideias</span><br>
-                            <span class="exper-emptext">Alura - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.udemy.com/certificate/UC-b24c5bec-7777-4bb8-a1b7-25ba482b7010/" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">JavaScript - Curso COMPLETO com 6 Projetos REAIS</span><br>
-                            <span class="exper-emptext">Udemy - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/fa5723f1-68ef-4027-abf1-59d5e2a6f79c" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">HTTP: Entendendo a web por baixo dos panos</span><br>
-                            <span class="exper-emptext">Udemy - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.udemy.com/certificate/UC-R8FZTHPN/" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">Angular 7/8 - Material Design + Node.js + MongoDB + Firebase</span><br>
-                            <span class="exper-emptext">Udemy - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/30b4bc63-74f0-4af9-87ea-4f184549691c" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">FLEXBOX: POSICIONE ELEMENTOS NA TELA</span><br>
-                            <span class="exper-emptext">Alura - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://cursos.alura.com.br/certificate/1a392181-821b-41a8-95e6-12cf39d39548" target="_blank">
-                    <div class="exper-card">
-                        <div class="exper-contIcon">
-                            <div class="exper-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21.4899 10.19L20.4899 9.63996L11.4899 4.63996H11.3799C11.3186 4.61403 11.255 4.59395 11.1899 4.57996H10.9999H10.8199C10.7516 4.59396 10.6846 4.61404 10.6199 4.63996H10.5099L1.50988 9.63996C1.35598 9.72717 1.22797 9.85365 1.13891 10.0065C1.04985 10.1593 1.00293 10.3331 1.00293 10.51C1.00293 10.6869 1.04985 10.8606 1.13891 11.0134C1.22797 11.1663 1.35598 11.2927 1.50988 11.38L3.99988 12.76V17.5C3.99988 18.2956 4.31595 19.0587 4.87856 19.6213C5.44117 20.1839 6.20423 20.5 6.99988 20.5H14.9999C15.7955 20.5 16.5586 20.1839 17.1212 19.6213C17.6838 19.0587 17.9999 18.2956 17.9999 17.5V12.76L19.9999 11.64V14.5C19.9999 14.7652 20.1052 15.0195 20.2928 15.2071C20.4803 15.3946 20.7347 15.5 20.9999 15.5C21.2651 15.5 21.5194 15.3946 21.707 15.2071C21.8945 15.0195 21.9999 14.7652 21.9999 14.5V11.06C21.9996 10.8828 21.9522 10.7088 21.8626 10.556C21.773 10.4031 21.6443 10.2768 21.4899 10.19V10.19ZM15.9999 17.5C15.9999 17.7652 15.8945 18.0195 15.707 18.2071C15.5194 18.3946 15.2651 18.5 14.9999 18.5H6.99988C6.73466 18.5 6.48031 18.3946 6.29277 18.2071C6.10523 18.0195 5.99988 17.7652 5.99988 17.5V13.87L10.5099 16.37L10.6599 16.43H10.7499C10.8329 16.4404 10.9169 16.4404 10.9999 16.43C11.0829 16.4404 11.1669 16.4404 11.2499 16.43H11.3399C11.393 16.4188 11.4437 16.3985 11.4899 16.37L15.9999 13.87V17.5ZM10.9999 14.36L4.05988 10.5L10.9999 6.63996L17.9399 10.5L10.9999 14.36Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="exper-empresa">
-                            <span class="exper-empName">HTML5 E CSS3</span><br>
-                            <span class="exper-emptext">Alura - Cursos de Tecnologia</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section id="Portfólio" class="three">
-            <div class="three-title">
-                <span>
-                    Portfólio
-                </span>
-            </div>
-            <div class="three-projetos">
-                <div>
-                    <p class="projetos-title">
-                        Estudo de caso - UX/UI Designer<img src="img/figma.png" alt="Logo Cash Advance" width="35px"
-                            class="figma">
-                    </p> <br>
-                    <p class="projetos-SubTitle">
-                        <img src="img/Logo-do-app.png" alt="Logo Cash Advance" width="50%" srcset="">
-                    </p>
-                    <div class="container-projetosText">
-                        <p class="projetos-text">
-                            O Cash Advance é um aplicativo inovador que busca resolver desafios financeiros enfrentados
-                            por autônomos no transporte de carga, oferecendo antecipação de valores para melhorar a
-                            estabilidade financeira dos prestadores de serviços de frete.
-                        </p>
-
-                    </div>
-                    <div class="fade-in-left4 container-buttom">
-                        <a class="buttom_Portf"
-                            href="https://www.behance.net/gallery/192799873/Cash-Advance-Estudo-de-caso-UX-UI-Design"
-                            target="_blank" rel="Estudo de caso Cash Advance">Ver Projeto</a>
-                    </div>
-                </div>
-                <div class="projetos-img text-focus-in">
-                    <a href="https://www.behance.net/gallery/192799873/Cash-Advance-Estudo-de-caso-UX-UI-Design"
-                        target="_blank" rel="Estudo de caso Cash Advance">
-                        <img src="img/Template-iPhoneSE.png" width="100%" alt="Imagem do aplicativo"></a>
-                </div>
-            </div>
-        </section>
-        <section id="contato" class="four">
-            <div class="four-container1">
-                <div class="four-title">
-                    Vamos conversar?
-                </div>
-                <div class="four-subTitle">
-                    Fique à vontade para entrar em contato via WhatsApp ou e-mail para discutirmos sobre UX, UI e
-                    Front-end. Estou animado para uma conversa produtiva e troca de ideias.
-                </div>
-                <a href="https://wa.me/5583987953525" target="_blank">
-                    <div class="container-contatIcon">
-                        <div class="icon-contact">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M12.0117 2C6.50572 2 2.02348 6.47837 2.02148 11.9844C2.02048 13.7444 2.48147 15.4626 3.35547 16.9766L2 22L7.23242 20.7637C8.69142 21.5597 10.3339 21.9775 12.0059 21.9785H12.0098C17.5148 21.9785 21.995 17.4991 21.998 11.9941C22 9.32514 20.9622 6.81573 19.0762 4.92773C17.1902 3.04073 14.6837 2.001 12.0117 2ZM12.0098 4C14.1458 4.001 16.1531 4.8338 17.6621 6.3418C19.1711 7.8518 20 9.85819 19.998 11.9922C19.996 16.3962 16.4138 19.9785 12.0078 19.9785C10.6748 19.9775 9.35441 19.6428 8.19141 19.0078L7.51758 18.6406L6.77344 18.8164L4.80469 19.2812L5.28516 17.4961L5.50195 16.6953L5.08789 15.9766C4.38989 14.7686 4.02048 13.3874 4.02148 11.9844C4.02348 7.58238 7.60677 4 12.0098 4ZM8.47656 7.375C8.30956 7.375 8.03955 7.4375 7.81055 7.6875C7.58155 7.9365 6.93555 8.53958 6.93555 9.76758C6.93555 10.9956 7.83008 12.1826 7.95508 12.3496C8.07908 12.5156 9.68175 15.1152 12.2188 16.1152C14.3268 16.9462 14.7549 16.7822 15.2129 16.7402C15.6709 16.6992 16.6904 16.1377 16.8984 15.5547C17.1064 14.9717 17.1069 14.4702 17.0449 14.3672C16.9829 14.2632 16.8164 14.2012 16.5664 14.0762C16.3174 13.9512 15.0903 13.3486 14.8613 13.2656C14.6323 13.1826 14.4648 13.1406 14.2988 13.3906C14.1328 13.6406 13.6558 14.2012 13.5098 14.3672C13.3638 14.5342 13.2188 14.5566 12.9688 14.4316C12.7188 14.3056 11.9149 14.0414 10.9609 13.1914C10.2189 12.5304 9.71827 11.7148 9.57227 11.4648C9.42727 11.2158 9.55859 11.0791 9.68359 10.9551C9.79559 10.8431 9.93164 10.6636 10.0566 10.5176C10.1806 10.3716 10.2236 10.2676 10.3066 10.1016C10.3896 9.93556 10.3472 9.78906 10.2852 9.66406C10.2232 9.53906 9.73763 8.3065 9.51562 7.8125C9.32862 7.3975 9.13113 7.38786 8.95312 7.38086C8.80813 7.37486 8.64256 7.375 8.47656 7.375Z"
-                                    fill="#FFF" />
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            (83) 98795-3525
-                        </div>
-                    </div>
-                </a>
-                <div class="container-contatIcon">
-                    <div class="icon-contact">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M19 4H5C4.20435 4 3.44129 4.31607 2.87868 4.87868C2.31607 5.44129 2 6.20435 2 7V17C2 17.7956 2.31607 18.5587 2.87868 19.1213C3.44129 19.6839 4.20435 20 5 20H19C19.7956 20 20.5587 19.6839 21.1213 19.1213C21.6839 18.5587 22 17.7956 22 17V7C22 6.20435 21.6839 5.44129 21.1213 4.87868C20.5587 4.31607 19.7956 4 19 4V4ZM18.59 6L12.71 11.88C12.617 11.9737 12.5064 12.0481 12.3846 12.0989C12.2627 12.1497 12.132 12.1758 12 12.1758C11.868 12.1758 11.7373 12.1497 11.6154 12.0989C11.4936 12.0481 11.383 11.9737 11.29 11.88L5.41 6H18.59ZM20 17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H5C4.73478 18 4.48043 17.8946 4.29289 17.7071C4.10536 17.5196 4 17.2652 4 17V7.41L9.88 13.29C10.4425 13.8518 11.205 14.1674 12 14.1674C12.795 14.1674 13.5575 13.8518 14.12 13.29L20 7.41V17Z"
-                                fill="#FFF" />
-                        </svg>
-                    </div>
-                    <div class="contact-text">
-                        fabiano.antero@gmail.com
-                    </div>
-                </div>
-            </div>
-            <div class="four-container2">
-                <a href="https://www.linkedin.com/in/fabianoantero/" target="_blank">
-                    <img class="linkedin text-focus-in" width="150px" src="img/linkedin-b.svg" alt="Qr code linkedin">
-                </a>
-            </div>
-        </section>
-         <section>
-      <contact-component></contact-component>
-    </section>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container py-2">
+      <div class="brand" aria-hidden>
+        <div class="brand__logo"><img src="/img/foto.png" alt=""></div>
+      </div>
+      <a class="navbar-brand fw-bold" href="#">Fabiano Antero</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+        aria-expanded="false" aria-label="Abrir navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#processo">Processo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js'></script>
-    <script src="js/script.js"></script>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container position-relative">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge rounded-pill px-3 py-2 mb-3"><i class="bi bi-stars me-2"></i> UI<span
+              class="text-gradient">/</span>UX • Product Designer</span>
+          <h1 class="display-4 headline mb-3">Crio <span class="text-gradient">experiências</span> digitais que combinam
+            estética, clareza e conversão.</h1>
+          <p class="lead sub mb-4">Design centrado em pessoas, guiado por dados. Protótipos rápidos, testes sem drama e
+            interfaces elegantes que funcionam no mundo real.</p>
+          <div class="d-flex gap-3 cta-wrap">
+            <a href="#projetos" class="btn btn-accent"><i class="bi bi-rocket-takeoff me-2"></i>Ver Projetos</a>
+            <a href="#contato" class="btn btn-ghost"><i class="bi bi-envelope me-2"></i>Falar comigo</a>
+          </div>
+          <div class="d-flex gap-2 mt-4 opacity-70 flex-wrap">
+            <span class="chip"><i class="bi bi-bezier2"></i><span>Design Systems</span></span>
+            <span class="chip"><i class="bi bi-phone"></i><span>Mobile-first</span></span>
+            <span class="chip"><i class="bi bi-speedometer2"></i><span>Performance</span></span>
+            <span class="chip"><i class="bi bi-graph-up"></i><span>UX Metrics</span></span>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card-dark p-3 p-lg-4 hover-lift">
+            <div class="project-thumb ratio ratio-4x3 mb-3">
+              <img src="cash.png"
+                alt="Mockup de interface" />
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <h5 class="mb-1">Estudo de caso - UX/UI Designer</h5>
+                <p class="mb-0 opacity-70">Cash Advance</p>
+              </div>
+              <a href="https://www.behance.net/gallery/192799873/Cash-Advance-Estudo-de-caso-UX-UI-Design" target="_blank" class="btn btn-sm btn-outline-light" >Case</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float-orb orb-1"></div>
+      <div class="float-orb orb-2"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="card-dark p-4 h-100">
+            <h3 class="mb-3">Sobre mim</h3>
+            <p class="opacity-70 mb-4">Sou UI/UX designer com foco em criar produtos digitais acessíveis e escaláveis.
+              Meu trabalho equilibra <strong>pesquisa</strong>, <strong>prototipação</strong> e <strong>design
+                systems</strong> para entregar valor com consistência.</p>
+            <div class="grid grid-2">
+              <div class="p-3 rounded-4" style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-joystick fs-3 text-gradient"></i>
+                  <div>
+                    <div class="fw-bold">Experiência</div>
+                    <div class="opacity-70">6+ anos em produtos</div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 rounded-4" style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-grid-3x3-gap fs-3 text-gradient"></i>
+                  <div>
+                    <div class="fw-bold">Design Systems</div>
+                    <div class="opacity-70">Tokens, libs e guidelines</div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 rounded-4" style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-graph-up-arrow fs-3 text-gradient"></i>
+                  <div>
+                    <div class="fw-bold">Data-driven</div>
+                    <div class="opacity-70">Métricas e experimentos</div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3 rounded-4" style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-universal-access fs-3 text-gradient"></i>
+                  <div>
+                    <div class="fw-bold">Acessibilidade</div>
+                    <div class="opacity-70">WCAG e testes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card-dark p-4 h-100">
+            <h3 class="mb-3">Habilidades</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="chip"><i class="ph ph-scribble-loop"></i> UI Design</span>
+              <span class="chip"><i class="ph ph-magnifying-glass"></i> UX Design</span>
+              <span class="chip"><i class="bi bi-columns"></i> Wireframes</span>
+              <span class="chip"><i class="bi bi-cpu"></i> Prototipagem</span>
+              <span class="chip"><i class="bi bi-kanban"></i> Design Ops</span>
+              <span class="chip"><i class="bi bi-hdd-network"></i> Sistemas</span>
+              <span class="chip"><i class="bi bi-eye"></i> A/B Testing</span>
+              <span class="chip"><i class="bi bi-braces"></i> HTML/CSS/JS</span>
+              <span class="chip"><i class="ph ph-angular-logo"></i> Angular</span>
+              <span class="chip"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+              <span class="chip"><i class="ph ph-figma-logo"></i> Figma</span>
+            </div>
+            <div class="mt-4 timeline">
+              <div class="t-item d-flex gap-3 align-items-start">
+                <div class="t-dot mt-1"></div>
+                <div>
+                  <div class="fw-bold">UUI/UX Designer • Softhouse</div>
+                  <div class="opacity-70 small">Lifters - 2023 / presente</div>
+                  <p class="mb-0 opacity-70">Coleta e validação de demandas com stakeholders, criacão de wireframes/protótipos, evolução de design systems e resolução de problemas relacionados a usabilidade e feedback contínuo.</p>
+                </div>
+              </div>
+              <div class="t-item d-flex gap-3 align-items-start">
+                <div class="t-dot mt-1"></div>
+                <div>
+                  <div class="fw-bold">UI/UX Designer • Integrador BaaS da TIVIT</div>
+                  <div class="opacity-70 small">TbankS - 2023</div>
+                  <p class="mb-0 opacity-70">Fluxos críticos (onboarding/KYC), acessibilidade e otimização de conversão.</p>
+                </div>
+              </div>
+              <div class="t-item d-flex gap-3 align-items-start">
+                <div class="t-dot mt-1"></div>
+                <div>
+                  <div class="fw-bold">UX Engineering • Fintech</div>
+                  <div class="opacity-70 small">Conpay Pagamento e Tecnologia S.A. - 2020 / 2023</div>
+                  <p class="mb-0 opacity-70">Fluxos críticos (onboarding/KYC), acessibilidade e otimização de conversão.
+                  </p>
+                </div>
+              </div>
+              <div class="t-item d-flex gap-3 align-items-start">
+                <div class="t-dot mt-1"></div>
+                <div>
+                  <div class="fw-bold">UI/UX Designer • Jornada de pagamento</div>
+                  <div class="opacity-70 small">Grupo Energisa - 2019 / 2020</div>
+                  <p class="mb-0 opacity-70">Páginas de alto tráfego, navegação e pesquisa com foco em jornadas de
+                    pagamento</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between mb-3">
+        <div>
+          <h3 class="mb-1">Projetos em Destaque</h3>
+          <p class="opacity-70 mb-0">Casos reais com impacto mensurável.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <div class="chip__button" data-filter="all">Todos</div>
+          <div class="chip__button" data-filter="fintech">Fintech</div>
+          <div class="chip__button" data-filter="saas">SaaS</div>
+          <div class="chip__button" data-filter="ecom">E-commerce</div>
+        </div>
+      </div>
+
+      <div class="grid grid-3" id="projGrid">
+        <!-- Card A -->
+        <article class="card-dark p-3 hover-lift project" data-tags="saas">
+          <div class="project-thumb ratio ratio-16x9 mb-3">
+            <img src="cash_thumb.png"
+              alt="Dashboard SaaS" />
+          </div>
+          <div class="d-flex justify-content-between align-items-start gap-3">
+            <div>
+              <h5 class="mb-1">Cash Advance</h5>
+              <p class="opacity-70 mb-2">Adiante seus fretes em poucos cliques. <br>
+Dinheiro na conta em até 24 horas.</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="chip"><i class="bi bi-diagram-3"></i> Arquitetura</span>
+                <span class="chip"><i class="bi bi-diagram-3"></i> Design System</span>
+                <span class="chip"><i class="ph ph-wallet"></i> Fintech</span>
+              </div>
+            </div>
+            <a class="btn btn-outline-light btn-sm" href="https://www.behance.net/gallery/192799873/Cash-Advance-Estudo-de-caso-UX-UI-Design" target="_blank" >Ver
+              </a>
+          </div>
+        </article>
+
+        <!-- Card B 
+        <article class="card-dark p-3 hover-lift project" data-tags="fintech">
+          <div class="project-thumb ratio ratio-16x9 mb-3">
+            <img src="https://images.unsplash.com/photo-1516245834210-c4c142787335?q=80&w=1600&auto=format&fit=crop"
+              alt="App Fintech" />
+          </div>
+          <div class="d-flex justify-content-between align-items-start gap-3">
+            <div>
+              <h5 class="mb-1">Conta Digital • Onboarding KYC</h5>
+              <p class="opacity-70 mb-2">+22% conversão • queda de 31% no abandono de cadastro.</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="chip"><i class="bi bi-phone"></i> Mobile UX</span>
+                <span class="chip"><i class="bi bi-shield-check"></i> KYC</span>
+                <span class="chip"><i class="bi bi-universal-access"></i> A11y</span>
+              </div>
+            </div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#caseModal2">Ver
+              Case</button>
+          </div>
+        </article>-->
+
+        <!-- Card C 
+        <article class="card-dark p-3 hover-lift project" data-tags="ecom">
+          <div class="project-thumb ratio ratio-16x9 mb-3">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop"
+              alt="E-commerce" />
+          </div>
+          <div class="d-flex justify-content-between align-items-start gap-3">
+            <div>
+              <h5 class="mb-1">E-commerce • Busca & Navegação</h5>
+              <p class="opacity-70 mb-2">+14% receita orgânica • 1.2s LCP em mobile.</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="chip"><i class="bi bi-search"></i> IA na busca</span>
+                <span class="chip"><i class="bi bi-speedometer2"></i> Performance</span>
+                <span class="chip"><i class="bi bi-diagram-3"></i> Arquitetura</span>
+              </div>
+            </div>
+            <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#caseModal3">Ver
+              Case</button>
+          </div>
+        </article>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-4">
+          <div class="card-dark p-4 h-100">
+            <h3 class="mb-3">Meu processo</h3>
+            <p class="opacity-70">Ciclo contínuo com checkpoints claros e documentação leve: aprendizado rápido, impacto
+              comprovado.</p>
+            <ul class="list-unstyled mb-0 small opacity-70">
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Descoberta e alinhamento</li>
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Pesquisa (heurística/qualitativa/quantitativa)</li>
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Prototipação & testes</li>
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Design system e specs</li>
+              <li class="mb-2"><i class="bi bi-check2 me-2"></i>Entrega e monitoramento</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="grid grid-2 h-100">
+            <div class="card-dark p-4">
+              <h6 class="text-uppercase opacity-70">Toolkit</h6>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="chip"><i class="bi bi-figma"></i> Figma</span>
+                <span class="chip"><i class="bi bi-kanban"></i> Notion/ClickUp</span>
+                <span class="chip"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+                <span class="chip"><i class="bi bi-github"></i> GitHub</span>
+                <span class="chip"><i class="bi bi-lightbulb"></i> Maze/Hotjar/Clarity</span>
+              </div>
+            </div>
+            <!-- <div class="card-dark p-4">
+              <h6 class="text-uppercase opacity-70">Resultados</h6>
+              <div class="row g-3 mt-1">
+                <div class="col-sm-4">
+                  <div class="p-3 rounded-4 text-center"
+                    style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                    <div class="fs-3 fw-bold">+59%</div>
+                    <div class="small opacity-70">Conversão</div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="p-3 rounded-4 text-center"
+                    style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                    <div class="fs-3 fw-bold">-28%</div>
+                    <div class="small opacity-70">Tempo de tarefa</div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="p-3 rounded-4 text-center"
+                    style="background:#0b1017;border:1px solid rgba(255,255,255,.06)">
+                    <div class="fs-3 fw-bold">+17</div>
+                    <div class="small opacity-70">NPS</div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card-dark p-4 h-100">
+            <h3 class="mb-3">Vamos conversar</h3>
+            <p class="opacity-70">Projetos, consultorias rápidas ou colaboração com equipes de produto.</p>
+            <form class="mt-3"
+              onsubmit="event.preventDefault();alert('Obrigado! Eu retornarei em breve.'); this.reset();">
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input id="nome" type="text" class="form-control" required />
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input id="email" type="email" class="form-control" required />
+                </div>
+                <div class="col-12">
+                  <label for="assunto" class="form-label">Assunto</label>
+                  <input id="assunto" type="text" class="form-control" />
+                </div>
+                <div class="col-12">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea id="mensagem" rows="4" class="form-control" required></textarea>
+                </div>
+                <div class="col-12 d-flex gap-2">
+                  <button class="btn btn-accent" type="submit"><i class="bi bi-send me-2"></i>Enviar</button>
+                  <a class="btn btn-ghost" href="https://www.dropbox.com/scl/fi/ysj1cy2zpup82b61gebvd/Fabiano-Antero-CV-08-12-2023.pdf?rlkey=1yofifslkon7ub46nt2gb00hl&dl=0" download>
+                    <i class="bi bi-file-earmark-arrow-down me-2"></i>Baixar CV
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card-dark p-4 h-100">
+            <h3 class="mb-3">Contato rápido</h3>
+            <div class="d-flex flex-column gap-3">
+              <a class="text-decoration-none text-reset d-flex align-items-center gap-3 hover-lift p-3 rounded-4"
+                style="background:#0b1017;border:1px solid rgba(255,255,255,.06)" href="mailto:fabiano.antero@gmail.com">
+                <i class="bi bi-envelope fs-4 text-gradient"></i>
+                <div>
+                  <div class="fw-bold">E-mail</div>
+                  <div class="opacity-70 small">fabiano.antero@gmail.com</div>
+                </div>
+              </a>
+              <a class="text-decoration-none text-reset d-flex align-items-center gap-3 hover-lift p-3 rounded-4"
+                style="background:#0b1017;border:1px solid rgba(255,255,255,.06)" href="https://wa.me/5583987953525"
+                target="_blank" rel="noreferrer">
+                <i class="bi bi-whatsapp fs-4 text-gradient"></i>
+                <div>
+                  <div class="fw-bold">WhatsApp</div>
+                  <div class="opacity-70 small">+55 (83) 98795-3525</div>
+                </div>
+              </a>
+              <a class="text-decoration-none text-reset d-flex align-items-center gap-3 hover-lift p-3 rounded-4"
+                style="background:#0b1017;border:1px solid rgba(255,255,255,.06)" href="https://www.linkedin.com/in/fabianoantero/" target="_blank"
+                rel="noreferrer">
+                <i class="bi bi-linkedin fs-4 text-gradient"></i>
+                <div>
+                  <div class="fw-bold">LinkedIn</div>
+                  <div class="opacity-70 small">in/fabianoantero/</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="small opacity-70">© <span id="year"></span> • Fabiano Antero • Todos os direitos reservados</div>
+      <div class="d-flex gap-3 opacity-70">
+        <a class="text-reset" href="#inicio">Topo</a>
+        <a class="text-reset" href="#sobre">Sobre</a>
+        <a class="text-reset" href="#projetos">Projetos</a>
+        <a class="text-reset" href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAIS DE CASES -->
+  <div class="modal fade" id="caseModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Case • SaaS Analytics</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <div class="ratio ratio-16x9 project-thumb">
+                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop"
+                  alt="Detalhe do dashboard" />
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <h6>Objetivo</h6>
+              <p class="opacity-70">Recriar a camada de análises com foco em clareza visual e tarefas rápidas.</p>
+              <h6>Impacto</h6>
+              <ul class="opacity-70">
+                <li>+17 pontos em NPS</li>
+                <li>-28% no tempo médio por tarefa</li>
+                <li>+19% adoção de recursos avançados</li>
+              </ul>
+              <h6>Stack & entregáveis</h6>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip">Pesquisa</span>
+                <span class="chip">Fluxos</span>
+                <span class="chip">Protótipos</span>
+                <span class="chip">Design Tokens</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="caseModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Case • Onboarding Fintech</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="opacity-70">Redução de atritos no cadastro com microcópias, validações progressivas e
+            acessibilidade.</p>
+          <div class="ratio ratio-16x9 project-thumb">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop"
+              alt="Fluxos de onboarding" />
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="caseModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Case • E-commerce</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="opacity-70">Melhorias na arquitetura de informação, resultados em SEO e LCP em 1.2s no mobile.</p>
+          <div class="ratio ratio-16x9 project-thumb">
+            <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?q=80&w=1600&auto=format&fit=crop"
+              alt="Categoria e busca" />
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Ano dinâmico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Filtro simples de projetos
+    const btns = document.querySelectorAll('[data-filter]');
+    const cards = document.querySelectorAll('#projGrid .project');
+    btns.forEach(b => b.addEventListener('click', () => {
+      const f = b.getAttribute('data-filter');
+      btns.forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      cards.forEach(c => {
+        c.style.display = (f === 'all' || c.dataset.tags.includes(f)) ? '' : 'none';
+      });
+    }));
+
+    // Scroll suave para âncoras do navbar
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length > 1) {
+          e.preventDefault();
+          document.querySelector(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
